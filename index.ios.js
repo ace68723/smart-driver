@@ -10,21 +10,13 @@ import React, {
   Text,
   View
 } from 'react-native';
+import Login from './App/Components/Login/Login'
 
 class smartDriver extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
+        <Login hello='hi' />
       </View>
     );
   }
@@ -33,9 +25,9 @@ class smartDriver extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    // justifyContent: 'center',
+    // alignItems: 'center',
+    // backgroundColor: '#F5FCFF',
   },
   welcome: {
     fontSize: 20,
